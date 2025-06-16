@@ -1,6 +1,8 @@
 package net.pixeljj.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
+import net.minecraft.component.type.FoodComponents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
@@ -9,7 +11,7 @@ import net.minecraft.util.Identifier;
 import net.pixeljj.tutorialmod.TutorialMod;
 
 public class ModItems {
-    public static final Item CRAB = registerItem("crab", new Item(new Item.Settings()));
+    public static final Item CRAB = registerItem("crab", new Item(new Item.Settings().food(FoodComponents.COD)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);
