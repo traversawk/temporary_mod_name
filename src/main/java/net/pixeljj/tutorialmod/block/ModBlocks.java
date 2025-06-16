@@ -27,9 +27,5 @@ public class ModBlocks {
     }
     public static void registerModBlocks() {
         TutorialMod.LOGGER.info("Registering Mod Blocks for " + TutorialMod.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(ModBlocks.CRAB_BLOCK);
-        });
     }
 }

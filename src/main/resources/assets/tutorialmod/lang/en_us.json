@@ -1,4 +1,5 @@
 {
   "item.tutorialmod.crab": "Crab",
-  "block.tutorialmod.crab_block": "Crab Block"
+  "block.tutorialmod.crab_block": "Crab Block",
+  "itemgroup.tutorialmod.crab_items": "Crab Items"
 }
