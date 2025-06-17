@@ -9,9 +9,11 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.pixeljj.tutorialmod.TutorialMod;
+import net.pixeljj.tutorialmod.item.custom.CrabItem;
 
 public class ModItems {
     public static final Item CRAB = registerItem("crab", new Item(new Item.Settings().food(FoodComponents.COD)));
+    public static final Item CRAB_WAND = registerItem("crab_wand", new CrabItem(new Item.Settings().maxDamage(32)));
 
     private static Item registerItem(String name, Item item){
         return Registry.register(Registries.ITEM, Identifier.of(TutorialMod.MOD_ID, name), item);

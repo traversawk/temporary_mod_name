@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.CRAB);
                         entries.add(ModBlocks.CRAB_BLOCK);
+                        entries.add(ModItems.CRAB_WAND);
                     }).build());
 
     public static void registerItemGroups(){
