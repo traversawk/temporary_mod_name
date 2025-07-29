@@ -2,6 +2,7 @@ package net.pixeljj.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.pixeljj.tutorialmod.block.ModBlocks;
 import net.pixeljj.tutorialmod.item.ModItemGroups;
 import net.pixeljj.tutorialmod.item.ModItems;
@@ -17,5 +18,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.PKMN_CHARCOAL, 2400);
 	}
 }
