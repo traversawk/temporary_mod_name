@@ -47,5 +47,6 @@ public class CrabItem extends Item {
         }
 
         return ActionResult.SUCCESS;
+
     }
 }
