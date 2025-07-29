@@ -19,6 +19,7 @@ public class ModItemGroups {
                         entries.add(ModItems.CRAB);
                         entries.add(ModBlocks.CRAB_BLOCK);
                         entries.add(ModItems.CRAB_WAND);
+                        entries.add(ModBlocks.CRAB_MAGIC_BLOCK);
                     }).build());
 
     public static void registerItemGroups(){

@@ -11,10 +11,14 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.pixeljj.tutorialmod.TutorialMod;
+import net.pixeljj.tutorialmod.block.custom.CrabMagicBlock;
 
 public class ModBlocks {
     public static final Block CRAB_BLOCK = registerBlock("crab_block",
             new Block(AbstractBlock.Settings.create().strength(0.5f).sounds(BlockSoundGroup.BASALT)));
+
+    public static final Block CRAB_MAGIC_BLOCK = registerBlock("crab_magic_block",
+            new CrabMagicBlock(AbstractBlock.Settings.create().strength(0.5f).requiresTool()));
 
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
